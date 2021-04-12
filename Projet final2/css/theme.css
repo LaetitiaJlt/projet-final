@@ -1,0 +1,194 @@
+
+/* *****************************************************
+  HEADER
+****************************************************** */
+header {
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  color: #fff;
+}
+/* *****************************************************
+  MENU
+****************************************************** */
+
+.menu ul {
+
+	background-color: #333;
+	color: #fff;
+	padding: 0em;
+}
+.menu a,
+.menu li{
+  list-style-type: none;
+  color: #eee;
+  padding: 1em;
+}
+.menu > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* *****************************************************
+  MAIN
+****************************************************** */
+main {
+  font-family: 'Forum', cursive;
+  padding: 1rem;
+  max-width: 83vw;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+  text-align: center;
+  color:#FFFFFF;
+  margin-bottom: 7em;
+}
+h2{
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}
+p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+/* *****************************************************
+  IMAGES
+****************************************************** */
+img{
+	max-width: 80vw;
+	height: auto;
+}
+/* *****************************************************
+ FORMULAIRE
+****************************************************** */
+form {
+  font-family: 'Oswald', sans-serif;
+  padding:10px;
+  width:280px;
+  margin-left: 9em;
+ }
+label{
+  margin-top:10px;
+  display:block;
+}
+.inline{
+  display:flex;
+  flex-wrap: wrap;
+ 
+}
+textarea{
+      min-height: 20ch;
+    }
+button{
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:2em;
+  text-decoration:none;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color:#8C8C8A;
+  text-align:center;
+}
+
+
+/* *****************************************************
+  FOOTER
+****************************************************** */
+footer {
+  background-color: mintcream;
+}
+
+/* *****************************************************
+  Tablette
+****************************************************** */
+@media screen and (min-width: 780px) and (max-width: 1200px) {
+   /* *****************************************************
+   FORMULAIRE
+  ****************************************************** */
+  h1{
+        font-size: 3rem;
+        margin-bottom: 19em;
+  }
+  .menu ul {
+    font-size: 2em;
+  }
+  form {
+    font-family: 'Oswald', sans-serif;
+    padding:10px;
+    width:444px;
+    display: flex;
+    flex-direction: column;
+   }
+  label{
+    margin-top:10px;
+    display:block;
+  }
+  .inline{
+    display:flex;
+    flex-wrap: wrap;
+   
+  }
+  button{
+    padding:1em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    text-decoration:none;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#8C8C8A;
+    text-align:center;
+  }
+}
+
+/* *****************************************************
+  ORDI
+****************************************************** */
+@media screen and (min-width: 1200px) {
+      /* *****************************************************
+      GENERAL
+    ****************************************************** */
+    * {
+      box-sizing: border-box;
+    }
+    /* *****************************************************
+      MAIN
+    ****************************************************** */
+    main {
+      max-width: 136ch;
+    }
+    h1{
+      padding-top: 216px;
+      padding-bottom: 213px;
+      font-size: 3rem;
+    }
+    .droite {
+  	  float: right;
+    }
+    /* *****************************************************
+      MENU
+    ****************************************************** */
+    .menu{
+      font-size: 1.5rem;
+    }
+    .menu a:focus {
+        	opacity: 1;
+    }
+    /* *****************************************************
+     FORMULAIRE
+    ****************************************************** */
+    .formulaire{
+      min-width: 136ch;
+      margin-left: 1px;
+    }
+    textarea{
+      min-width: 100ch;
+      min-height: 20ch;
+    }
+}
